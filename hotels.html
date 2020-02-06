@@ -11,7 +11,7 @@
                <li><a href="info.html">Информация</a></li>
                <li><a href="news.html">Фото и видео</a></li>
                <li><a class="main-header-logo"  href="index.html">
-                  <img src="img/logo.svg" width="140" height="72" alt="Логотип «City of Sedona»"></a>
+                  <img src="img/logo.png" width="140" height="72" alt="Логотип «City of Sedona»"></a>
                </li>
                <li><a href="statemap.html">Карта штата</a></li>
                <li><a href="hotels.html">Гостиницы</a></li>
@@ -19,13 +19,61 @@
          </nav>
       </header>
       <main>
-         <!--  <form></form> здесь будет форма -->
+
+
+          <form class="filter">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-inupt filter-inupt-checkbox" type="checkbox" name="pool" id="pool" checked><label for="pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-inupt filter-inupt-checkbox" type="checkbox" name="parking" id="parking"><label for="parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-inupt filter-inupt-checkbox" type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">Wi-Fi</label>
+              </li>
+           </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-inupt filter-inupt-checkbox" type="checkbox" name="hotel" id="hotel" checked><label for="hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-inupt filter-inupt-checkbox" type="checkbox" name="motel" id="motel" checked><label for="motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-inupt filter-inupt-checkbox" type="checkbox" name="apartments" id="apartments" checked><label for="apartments">Апартаменты</label>
+              </li>
+           </ul>
+        </fieldset>
+        <p>
+        <label for="cost-per-day">Стоимость в сутки (Р):</label>
+        </p>
+         <input id="cost-per-day" class="visually-hidden filter-inupt filter-inupt-range" type="range" min="0" max="3000" step="1">
+         <button type="submit" class="fiter-button button">Показать</button>
+      </form>
+      
+      <h3>Найдено: 3</h3>
+      <p>
+         Сортировка:
+      </p>
+      <ul class="sorting">
+        <li><a class="sorting-current">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">Средства для ухода</a></li>
+     </ul>
+
          <section>
             <h3 class="hotels"><a href="#">Amara resort & spa</a></h3>
             <p>гостиница от 4000 р.</p>
-            <figure>
+            <p>
                <img src="img/hotel-1.jpg" width="135" height="90" alt="Фото отеля Amara resort">
-            </figure>
+            </p>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
          </section>
@@ -33,18 +81,18 @@
             <section>
             <h3 class="hotels"><a href="#">Desert Quail Inn</a></h3>
             <p>гостиница от 3000 р.</p>
-            <figure>
+            <p>
                <img src="img/hotel-2.jpg" width="135" height="90" alt="Фото отеля Desert Quail Inn">
-               </figure>
+               </p>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
          </section>
          <section>
             <h3 class="hotels"><a href="#">Villas at poco Diablo</a></h3>
             <p>апартаменты от 2000 р.</p>
-            <figure>
+            <p>
                <img src="img/hotel-3.jpg" width="135" height="90" alt="Фото отеля Villas at poco Diablo">
-            </figure>
+            </p>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
          </section>

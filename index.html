@@ -98,11 +98,42 @@
          <section class="menu">
             <h3>Заинтересовались?</h3>
             <p>Укажите преролагаемые даты поездки,<br>
-               и мы покажем вам лучшие предложение гостиниц в седоне
-            </p>
-            <h2>Поиск гостиницы в Седоне</h2>
-         </section>
-         <!--	<form></form> здесь будет форма -->
+               и мы покажем вам лучшие предложение гостиниц в седоне</p>
+               <h2>Поиск гостиницы в Седоне</h2>
+               </section>
+               <form action="https://echo.htmlacademy.ru" method="get">
+                  <p class="appointment-item">
+          <label for="appointment-date-check-in">
+          Дата заезда: 
+          </label>
+          <input id="appointment-date-check-in" type="date" name="date" value="24.04.2017">
+       </p>
+
+       <p class="appointment-item">
+          <label for="appointment-date-check-out">
+            Дата выезда:
+          </label>
+          <input id="appointment-date-check-out" type="date" name="date" value="04.06.2017">
+       </p>
+
+       <p class="appointment-item">
+          <label for="appointment-number-of-adults">
+            Взрослые:
+          </label>
+          <input id="appointment-number-of-adults" type="number" name="number" value="2">
+       </p>
+
+       <p class="appointment-item">
+          <label for="appointment-number-of-children">
+            Дети:
+          </label>
+          <input id="appointment-number-of-children" type="number" name="number" value="0">
+       </p>
+       <button type="submit" class="fiter-button button">Найти</button>
+    </form>
+    <p>
+        <img src="img/map.png" width="1200" height="594" alt="Карта Штата">
+      </p>
       </main>
       <footer>
          <p class="footer-contact">#Visitsedona</p>
