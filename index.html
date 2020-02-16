@@ -3,10 +3,13 @@
    <head>
       <meta charset="utf-8">
       <title>Welcome to Sedona</title>
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
       <header>
-         <nav>
+         <nav class="main-navigation">
             <ul class="site-navigation">
                <li><a href="info.html">Информация</a></li>
                <li><a href="news.html">Фото и видео</a></li>
@@ -18,20 +21,18 @@
             </ul>
          </nav>
       </header>
-      <main>
-         <h1>Гостиницы в Седоне</h1>
-         <section class="page-image">
-            <img src="img/welcome.png" width="459" height="353" alt="Welcome to the gorgeous Sedona">
-            <img src="img/background-photo.jpg" width="1200" height="800" alt="Фото Седоны">
-            <img src="img/polygon.png" width="1203" height="59" alt="">
-         </section>
+         <h1 class="visually-hidden">Гостиницы в Седоне</h1>
+
+         <div class="page-image">
+           
+         </div>
          <section class="info">
             <h2>Седона - небольшой городок в Аризоне,<br> 
                заслуживающий большего!
             </h2>
-            <h3>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h3>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
          </section>
-         <section class="pruduct-info">
+         <section class="product-info">
             <h2>Настоящий<br>
                городок
             </h2>
@@ -41,7 +42,7 @@
             </p>
             <img src="img/feature-picture.jpg" width="800" height="256" alt="Седона не аттракцион">
          </section>
-         <section>
+         <section class="pruduct-info-list">
             <ul class="info-logo">
                <li>
                   <h3>Жилье</h3>
@@ -66,7 +67,7 @@
                </li>
             </ul>
          </section>
-         <section class="pruduct-info">
+         <section class="product-info">
             <h2>Там есть мост дьявола</h2>
             <p>-№2-<br>
                Да, по нему можно проити! Если конечно<br>
@@ -74,21 +75,21 @@
             </p>
             <img src="img/layer-5.jpg" width="800" height="256" alt="Фото Моста дьявола">
          </section>
-         <section class="pruduct-info-info">
+         <section class="product-info-info">
             <h2>Небольшая площадь</h2>
             <p>-№3-<br>
                Все достопримечательности<br>
                находятся очень близко
             </p>
          </section>
-         <section class="pruduct-info-info">
+         <section class="product-info-info">
             <h2>Красивая дорога</h2>
             <p>-№4-<br>
                Ехать в Седону из Лас-Вегаса совсем<br>
                не скучно!
             </p>
          </section>
-         <section class="pruduct-info-info">
+         <section class="product-info-info">
             <h2>Мало туристов</h2>
             <p>-№5-<br>
                Большинство едет в Гранд Каньон<br>
@@ -106,14 +107,14 @@
           <label for="appointment-date-check-in">
           Дата заезда: 
           </label>
-          <input id="appointment-date-check-in" type="date" name="date" value="24.04.2017">
+          <input id="appointment-date-check-in" type="date" name="date" placeholder="24.04.2017" value="24.04.2017">
        </p>
 
        <p class="appointment-item">
           <label for="appointment-date-check-out">
             Дата выезда:
           </label>
-          <input id="appointment-date-check-out" type="date" name="date" value="04.06.2017">
+          <input id="appointment-date-check-out" type="date" name="date" placeholder="04.06.2017" value="04.06.2017">
        </p>
 
        <p class="appointment-item">
@@ -129,7 +130,7 @@
           </label>
           <input id="appointment-number-of-children" type="number" name="number" value="0">
        </p>
-       <button type="submit" class="fiter-button button">Найти</button>
+       <button type="submit" class="filter-button button">Найти</button>
     </form>
     <p>
         <img src="img/map.png" width="1200" height="594" alt="Карта Штата">
@@ -139,9 +140,9 @@
          <p class="footer-contact">#Visitsedona</p>
          <div class="footer-social">
             <ul>
-               <li><a class="social-button" href="#">twitter</a></li>
-               <li><a class="social-button" href="#">facebook</a></li>
-               <li><a class="social-button" href="#">youtube</a></li>
+               <li><a class="social-button" href="#"><img src="img/tw-icon.png" width="17" height="15"></a></li>
+               <li><a class="social-button" href="#"><img src="img/fb-icon.png" width="12" height="22"></a></li>
+               <li><a class="social-button" href="#"><img src="img/youtube-icon.png" width="20" height="16"></a></li>
             </ul>
          </div>
          <p class="footer-copyright">

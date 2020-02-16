@@ -3,10 +3,13 @@
    <head>
       <meta charset="utf-8">
       <title>Welcome to Sedona</title>
-   </head>
-   <body>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+   <body class="inner-page">
       <header>
-         <nav>
+         <nav class="main-navigation">
             <ul class="site-navigation">
                <li><a href="info.html">Информация</a></li>
                <li><a href="news.html">Фото и видео</a></li>
@@ -19,9 +22,8 @@
          </nav>
       </header>
       <main>
-
-
-          <form class="filter">
+        <div class="background-filter">
+        <form class="filter">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
@@ -52,12 +54,12 @@
            </ul>
         </fieldset>
         <p>
-        <label for="cost-per-day">Стоимость в сутки (Р):</label>
+        <legend for="cost-per-day">Стоимость в сутки (Р):</legend>
         </p>
          <input id="cost-per-day" class="visually-hidden filter-inupt filter-inupt-range" type="range" min="0" max="3000" step="1">
          <button type="submit" class="fiter-button button">Показать</button>
       </form>
-      
+      </div>
       <h3>Найдено: 3</h3>
       <p>
          Сортировка:
