@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
-      <header>
+      <header class="main-header">
          <nav class="main-navigation">
             <ul class="site-navigation">
                <li><a href="info.html">Информация</a></li>
@@ -21,6 +21,7 @@
             </ul>
          </nav>
       </header>
+      <main>
          <h1 class="visually-hidden">Гостиницы в Седоне</h1>
 
          <div class="page-image">
@@ -33,6 +34,7 @@
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
          </section>
          <section class="product-info">
+          <div class="product-description">
             <h2>Настоящий<br>
                городок
             </h2>
@@ -40,13 +42,16 @@
                Седона - не аттракцион для туристов,<br>
                там течет своя жизнь
             </p>
+          </div>
+          <div class="product-info-image">
             <img src="img/feature-picture.jpg" width="800" height="256" alt="Седона не аттракцион">
+          </div>
          </section>
          <section class="pruduct-info-list">
             <ul class="info-logo">
                <li>
                   <h3>Жилье</h3>
-                  <p>Рекомендуем пожить в натсоящем<br>
+                  <p>Рекомендуем пожить в настоящем<br>
                      мотеле, всё как в кино!
                   </p>
                   <img src="img/icon-1.png" width="75" height="72" alt="">
@@ -68,40 +73,53 @@
             </ul>
          </section>
          <section class="product-info">
+          <div class="product-info-image">
+            <img src="img/layer-5.jpg" width="800" height="256" alt="Фото Моста дьявола">
+          </div>
+            <div class="product-description">
             <h2>Там есть мост дьявола</h2>
             <p>-№2-<br>
                Да, по нему можно проити! Если конечно<br>
                вы осмелитесь 
             </p>
-            <img src="img/layer-5.jpg" width="800" height="256" alt="Фото Моста дьявола">
+          </div>
+
          </section>
          <section class="product-info-info">
+            <ul class="product-info-list">
+              <li class="product-info-feature">
             <h2>Небольшая площадь</h2>
             <p>-№3-<br>
                Все достопримечательности<br>
                находятся очень близко
             </p>
-         </section>
-         <section class="product-info-info">
+          </li>
+
+         <li class="product-info-feature">
             <h2>Красивая дорога</h2>
             <p>-№4-<br>
                Ехать в Седону из Лас-Вегаса совсем<br>
                не скучно!
             </p>
-         </section>
-         <section class="product-info-info">
+         </li>
+         <li class="product-info-feature">
             <h2>Мало туристов</h2>
             <p>-№5-<br>
                Большинство едет в Гранд Каньон<br>
                и толпится там
             </p>
+          </li>
+          </ul>
          </section>
          <section class="menu">
             <h3>Заинтересовались?</h3>
             <p>Укажите преролагаемые даты поездки,<br>
                и мы покажем вам лучшие предложение гостиниц в седоне</p>
-               <h2>Поиск гостиницы в Седоне</h2>
-               </section>
+              </section>
+
+               <div class="form-container">
+               <h2><a href="hotels.html">Поиск гостиницы в Седоне</a></h2>
+               
                <form action="https://echo.htmlacademy.ru" method="get">
                   <p class="appointment-item">
           <label for="appointment-date-check-in">
@@ -130,27 +148,32 @@
           </label>
           <input id="appointment-number-of-children" type="number" name="number" value="0">
        </p>
-       <button type="submit" class="filter-button button">Найти</button>
+       <button type="submit" class="index-button button">Найти</button>
     </form>
-    <p>
+  </div>
+    <p class="statemap">
         <img src="img/map.png" width="1200" height="594" alt="Карта Штата">
       </p>
       </main>
-      <footer>
-         <p class="footer-contact">#Visitsedona</p>
-         <div class="footer-social">
-            <ul>
-               <li><a class="social-button" href="#"><img src="img/tw-icon.png" width="17" height="15"></a></li>
-               <li><a class="social-button" href="#"><img src="img/fb-icon.png" width="12" height="22"></a></li>
-               <li><a class="social-button" href="#"><img src="img/youtube-icon.png" width="20" height="16"></a></li>
+      <footer class="main-footer">
+        <div class="footer-container">
+         <p class="footer-contact">#Visitsedona<br>
+          Тел: +7(495) 666-02-66
+         </p>
+         
+            <ul class="footer-social">
+               <li class="social-button"><a href="#"><img src="img/tw-icon.png" width="17" height="15"></a></li>
+               <li class="social-button"><a href="#"><img src="img/fb-icon.png" width="12" height="22"></a></li>
+               <li class="social-button"><a href="#"><img src="img/youtube-icon.png" width="20" height="16"></a></li>
             </ul>
-         </div>
+         
          <p class="footer-copyright">
             Website by
             <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmla.png" width="115" height="41" alt="Logo HTML Academy">
             </a>
          </p>
+       </div>
       </footer>
    </body>
 </html>

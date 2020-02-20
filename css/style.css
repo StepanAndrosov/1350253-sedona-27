@@ -11,16 +11,13 @@ body {
   background-color: #ffffff;
 }
 
-
-
+ 
 a {
   text-decoration: none;
 }
 
 .button {
   font: inherit;
-
-  text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
@@ -40,9 +37,14 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.main-header {
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
 .main-navigation {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 25px;
   color: #000000;
 
@@ -50,6 +52,10 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1200px;
   list-style: none;
 }
 
@@ -69,15 +75,16 @@ a {
 .page-image {
   display: inline-block;
   width: 100%;
+  height: 773px;
   
   background-color: #81b3d2;
-  background-image: url("img/background-photo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  
+  background: 
+  url("../img/welcome.png") no-repeat 50% 50%,
+  url(../img/polygon.png) no-repeat 0px 100%,
+  url("../img/background-photo.jpg") no-repeat;
+  
 }
-  /*url(img/welcome.png) width="459" height="353" alt="Welcome to the gorgeous Sedona" no-repeat,
-  url(img/polygon.png);
-  }*/
 
 .info h2 {
   font-size: 21px;
@@ -96,9 +103,18 @@ a {
 }
 
 .product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #ffffff;
   background-color: #81b3d2;
 }
+
+.product-description div{
+  text-align: center;
+  padding: 10px;
+}
+
 
 .product-info h2 {
   font-size: 21px;
@@ -112,11 +128,14 @@ a {
 }
 
 .pruduct-info-list {
+  
   text-align: center;
   background-color: #ffffff;
 }
 
 .info-logo {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -124,6 +143,11 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+}
+
+.product-info-info {
+
+  background-color: #eeeeee;
 }
 
 .product-info-info h2{
@@ -137,6 +161,19 @@ a {
   text-align: center; 
 }
 
+.product-info-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.product-info-feature {
+  padding-top: 50px;
+  width: 400px;
+  min-height: 256px;
+}
+
 .menu {
   text-align: center; 
 }
@@ -147,12 +184,37 @@ a {
   line-height: 36px; 
 }
 
-.menu h2 {
+.form-container {
+  width: 568px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.form-container h2 {
+  padding-top: 35px;
+  padding-bottom: 33px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #ffffff; 
-  background-color: #766357 
+  background-color: #766357; 
+  text-align: center; 
+}
+
+.form-container a {
+  color: #ffffff; 
+}
+
+.form-container a:hover,
+.form-container a:focus {
+  background-color: #604e43; 
+}
+
+.form-container a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33; 
 }
 
 .appointment-item {
@@ -170,30 +232,44 @@ a {
   background-color: #ffffff;
 }
 
-.filter-button {
-  text-align: center;
+.index-button {
+  font-size: 21px;
+  font-weight: 700;
+  position: center;
 }
 
-.footer-contacts p {
+.main-footer {
+  min-height: 120px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer .footer-container {
+  display: flex;
+}
+
+.footer-contact p {
+  font-size: 21px;
   font-weight: 700;
 }
 
-.footer-social ul {
+.footer-social {
   list-style: none;
+  min-height: 100px;
 }
 
 .social-button {
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
-
 }
 
 
-.footer-social a:hover,
-.footer-social a:focus {
+.social-button a:hover,
+.social-button a:focus {
   background-color: #669ec0;
 }
 
-.footer-social a:active {
+.social-button a:active {
   background-color: #5496bd;
 }
 
@@ -217,7 +293,7 @@ a {
 }
 
 .background-filter {
-  background-image: url("img/background.jpg");
+  background-image: url("../img/background.jpg");
 }
 
 .fiter-button {
@@ -229,8 +305,37 @@ a {
   background-color: #ffffff;
 }
 
+.button-hotels {
+  background-color: #766357;
+}
 
+.filter fieldset {
 
+  border: none;
+}
 
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
 
+.filter-input:disabled + label {
+  color: #000000;
 
+  opacity: 0.5;
+}
+
+.filter-inupt-checkbox {
+  width: 23px; 
+  height: 23px;
+  display: block; /* Блочный элемент */
+  position: relative;
+}
+
+input[type="checkbox"] + span {
+ position: absolute; /* Абсолютное позиционирование */
+ left: 0; top: 0;
+ width: 100%; height: 100%;
+ background: url(../img/checkbox-off.png) no-repeat; /* Фоновый рисунок */
+ cursor: pointer; /* Курсор в виде руки */
+}
