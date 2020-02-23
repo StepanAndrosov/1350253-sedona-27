@@ -21,7 +21,7 @@ a {
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-
+  font-weight: 700;
   background-color: #81b3d2;
   border: none;
 }
@@ -263,7 +263,6 @@ a {
   background-color: #81b3d2;
 }
 
-
 .social-button a:hover,
 .social-button a:focus {
   background-color: #669ec0;
@@ -274,9 +273,11 @@ a {
 }
 
 .filter {
+ display: flex;
  color: #ffffff; 
-
+ justify-content: center;
  background-color: #81b3d2; 
+ min-height: 217px;
 }
 
 .filter ul {
@@ -293,20 +294,56 @@ a {
 }
 
 .background-filter {
+  
+  margin: 0px;
   background-image: url("../img/background.jpg");
 }
 
-.fiter-button {
+.hotels-list-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 72px;
+
+}
+
+.hotels-list h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.hotels a {
+ color: #000000; 
+}
+
+.filter-button {
   border: 2px solid #ffffff;
 }
 
-.fiter-button:active {
+.filter-button:active {
   color: #000000;
   background-color: #ffffff;
 }
 
-.button-hotels {
+.button-book-a-hotel {
+  color: #ffffff;
   background-color: #766357;
+  padding: 8px 16px;
+}
+
+.button-book-a-hotel:hover,
+.button-book-a-hotel:focus {
+  background-color: #604e43;
+}
+
+.button-book-a-hotel:active {
+
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.button-detailed {
+  padding: 8px 17px;
+  color: #ffffff;
 }
 
 .filter fieldset {
@@ -328,14 +365,42 @@ a {
 .filter-inupt-checkbox {
   width: 23px; 
   height: 23px;
-  display: block; /* Блочный элемент */
+  display: block; 
   position: relative;
 }
 
-input[type="checkbox"] + span {
- position: absolute; /* Абсолютное позиционирование */
- left: 0; top: 0;
- width: 100%; height: 100%;
- background: url(../img/checkbox-off.png) no-repeat; /* Фоновый рисунок */
- cursor: pointer; /* Курсор в виде руки */
+.shorting-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.shorting-container ul{
+  list-style: none;
+  
+}
+.shorting-container h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.sorting a {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting a:hover,
+.sorting a:focus {
+  color: #81b3d2;
+}
+
+.sorting a:active {
+  color: #000000;
+  border: none;
+}
+
+.sorting-current a {
+  color: #81b3d2;
+  border: none;
 }
