@@ -372,8 +372,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  z-index: 10;
 
-  border: 2px solid royalblue;
+  background-color: #ffffff: 
 }
 
 .form-container h2 {
@@ -421,6 +426,17 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   font-weight: 700;
   position: center;
+}
+
+.state-map {
+  position: relative;
+  top: 86px;
+  width: 1200px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  min-height: 594px;
+  z-index: 1;
 }
 
 .main-footer {
