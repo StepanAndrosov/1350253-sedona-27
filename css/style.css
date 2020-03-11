@@ -334,7 +334,6 @@ input[type="radio"].visually-hidden {
   text-align: center; 
   margin: 0;
   padding: 0;
-  border: 2px solid lightgreen;
 }
 
 .form-title h3 {
@@ -360,7 +359,6 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   justify-content: flex-start;
 
-  position: absolute;
   z-index: 10;
 
   background-color: #ffffff; 
@@ -381,7 +379,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 33px; 
 
   background-color: #766357; 
-  border: 1px solid black;
 }
 
 .form-container a:hover,
@@ -397,27 +394,76 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3) 
 }
 
-.form-container form {
-  border: 1px solid #503e33; 
-}
-
 .appointment-item {
+  display: flex;
+  justify-content: flex-start;
+  width: 458px;
   font-weight: 600;
   margin: 0;
   padding: 0;
   padding-left: 55px;
 
   background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  box-shadow: inset 0 0 0 1px rgb(234, 255, 45);
 }
+
+.appointment-item:nth-child(3) {
+  width: 226px;
+  padding: 0;
+  padding-left: 55px;
+
+}
+
+.appointment-item:nth-child(4) {
+  width: 226px;
+  padding: 0;
+  padding-left: 53px;
+}
+
 .appointment-form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  width: 568px;
+  height: 395px;
+  border: 1px solid black;
+}
+
+.appointment-form p:nth-child(1) input {
+  width: 346px;
+  height: 38px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 55px;
+  margin-bottom: 29px;
+}
+
+.appointment-form p:nth-child(2) input {
+  width: 346px;
+  height: 38px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.appointment-form p:nth-child(3) input {
+  width: 114px;
+  height: 38px;
+  margin-bottom: 54px;;
+}
+
+.appointment-form p:nth-child(4) input {
+  width: 114px;
+  height: 38px;
+  margin-left: 0px;
+  margin-bottom: 54px;
+  padding-right: 55px;
 }
 
 .appointment-item input {
-  font: inherit;
-  font-weight: 600;
+  outline: 0;
+  border: none;
+
   background-color: #f2f2f2;
 }
 
@@ -426,13 +472,15 @@ input[type="radio"].visually-hidden {
 }
 
 .index-button {
+  box-sizing: border-box;
   font-size: 21px;
-  font-weight: 700;
-  position: center;
+  font-weight: 600;
+  width: 458px;
+  height: 58px;
+  margin-bottom: 0;
 }
 
 .state-map {
-  position: relative;
   top: 90px;
   width: 1200px;
   background-image: url("../img/map.png");
