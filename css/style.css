@@ -95,7 +95,7 @@ input[type="radio"].visually-hidden {
   padding: 10px 50px 22px 50px;
 }
 
-.nav-current {
+.nav-current a{
   color: #766357;
 }
 
@@ -422,7 +422,29 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-item label {
+  display: block;
+  cursor: pointer;
   padding-right: 20px;
+}
+
+.appointment-item {
+  position: relative;
+}
+
+.appointment-calendar {
+  position: absolute;
+  top: 9px;
+  left: 429px;
+  cursor: pointer;
+}
+
+.appointment-calendar path:hover,
+.appointment-calendar path:focus {
+  fill: #000000;
+}
+
+.appointment-calendar path:active {
+  fill: #81b3d2;
 }
 
 .appointment-item input {
@@ -591,7 +613,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter legend {
-  margin-bottom: 9px;
+  margin-bottom: 28px;
 
   font-weight: 600;
   font-size: 16px;
@@ -634,7 +656,7 @@ input[type="radio"].visually-hidden {
   }
 
 .filter-option label {
-  margin-bottom: 22px;
+  padding-bottom: 29px;
   position: relative;
 
   display: block;
@@ -963,25 +985,31 @@ color: rgba(0, 0, 0, 0.3);
 .shorting-container {
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: baseline;
   padding-bottom: 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 26px;
 }
 
 .shorting-container h3 {
   margin: 0;
   padding: 0;
   margin-top: 0px;
-  margin-left: 72px;
+  padding-left: 72px;
+  padding-bottom: 33px;
   font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
 }
 
 .shorting-container ul{
   list-style: none;
+  margin: 0;
   padding: 0;
   padding-left: 40px;
+  padding-bottom: 33px;
 }
 
 .shorting-container p {
@@ -989,10 +1017,12 @@ color: rgba(0, 0, 0, 0.3);
   margin: 0;
   padding: 0;
   margin-left: 49px;
+  padding-bottom: 33px;
 }
 
 .shorting {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .shorting li {
@@ -1033,14 +1063,14 @@ color: rgba(0, 0, 0, 0.3);
 .icon-up-down {
   display: flex;
   margin: 0;
-  
+  padding-bottom: 33px;
   margin-left: auto;
   margin-right: 73px;
   cursor: pointer;
 }
 
 .icon-down {
-  margin-left: 12px;
+  padding-left: 12px;
 }
 
 .icon-up-down path:hover,
