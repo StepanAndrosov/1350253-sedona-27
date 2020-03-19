@@ -62,6 +62,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   width: 1200px;
+  min-height: 56px;
   margin: 0 auto;
 }
 
@@ -72,27 +73,43 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #ffffff;
+
+  padding-left: 72px;
+  padding-right: 72px;
   outline: 2px solid yellow;
 }
 
 .site-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
   margin: 0;
   padding: 0;
-  width: 1200px;
   list-style: none;
-  outline: 1px solid #00FFFF;
+
 }
 
 .site-navigation a {
+  display: inline-block;
   color: #000000;
 
   outline: 1px solid #00FFFF;
 }
 
 .site-navigation a:not(.main-header-logo) {
-  padding: 10px 50px 22px 50px;
+  padding-top: 10px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 10px;
+}
+
+.site-navigation li:first-child a {
+  padding-left: 0;
+}
+
+.site-navigation li:last-child a {
+  padding-right: 0;
 }
 
 .nav-current a{
@@ -101,9 +118,9 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
   position: relative;
-  
   z-index: 10;
-  }
+  padding: 0px 53px 0px 51px;
+}
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -123,7 +140,6 @@ input[type="radio"].visually-hidden {
 }
 
 .page-image {
- 
   width: 100%;
   height: 510px;
   
