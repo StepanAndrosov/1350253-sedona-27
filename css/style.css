@@ -64,34 +64,29 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   min-height: 56px;
   margin: 0 auto;
-}
-
-.main-navigation {
   font-size: 14px;
   font-weight: 600;
   line-height: 26px;
   color: #000000;
-
-  background-color: #ffffff;
-
-  padding-left: 72px;
-  padding-right: 72px;
-  outline: 2px solid yellow;
 }
 
 .site-navigation {
+  position: relative;
+  min-height: 56px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-content: flex-start;
+  
   margin: 0;
   padding: 0;
-  list-style: none;
+
+  outline: 2px solid yellow;
+
+  background-color: #ffffff;
 
 }
 
 .site-navigation a {
-  display: inline-block;
   color: #000000;
 
   outline: 1px solid #00FFFF;
@@ -99,25 +94,37 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a:not(.main-header-logo) {
   padding-top: 10px;
-  padding-right: 70px;
-  padding-left: 70px;
+  padding-right: 60px;
+  padding-left: 60px;
   padding-bottom: 10px;
 }
 
-.site-navigation li:first-child a {
-  padding-left: 0;
+.site-navigation a:first-child {
+  padding-left: 72px;
 }
 
-.site-navigation li:last-child a {
-  padding-right: 0;
+.site-navigation a:last-child {
+  padding-right: 72px;
 }
 
-.nav-current a{
+.site-navigation a:nth-child(2) {
+  position: relative;
+  right: 80px;
+}
+
+.site-navigation a:nth-child(4) {
+  position: relative;
+  left: 80px;
+}
+
+.nav-current a {
   color: #766357;
 }
 
 .main-header-logo {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  margin-left: -121px;
   z-index: 10;
   padding: 0px 53px 0px 51px;
 }
@@ -132,8 +139,6 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  position: relative;
-  top: -27px;
   width: 1200px;
   margin: 0 auto;
   padding: 0 0;
@@ -153,16 +158,18 @@ input[type="radio"].visually-hidden {
 
 .info {
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  margin-top: 59px; 
+  margin-bottom: 44px;
 }
 
 .info h2 {
-  margin-top: 57px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
   text-align: center;
+  margin: 0;
 }
 
 .info p {
@@ -170,7 +177,9 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   color: #333333;
   text-align: center;
-  margin-bottom: 44px;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 10px;
 }
 
 .product-info {
@@ -282,8 +291,8 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-top: 56px; 
-  margin-bottom: 83px;
+  padding-top: 56px; 
+  padding-bottom: 73px;
 }
 
 .info-logo h3 {
@@ -292,8 +301,8 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   margin: 0;
   padding: 0;
-  margin-top: 32px;
-  margin-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 30px;
 }
 
 .info-logo p {
@@ -356,8 +365,8 @@ input[type="radio"].visually-hidden {
 
 .form-title h3 {
   margin: 0;
-  margin-top: 51px;
-  margin-bottom: 44px;
+  padding-top: 57px;
+  padding-bottom: 44px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px; 
@@ -367,7 +376,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 64px;
+  padding-bottom: 52px;
 }
 
 .form-container {
@@ -478,6 +487,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-item:nth-child(3) input {
   max-width: 114px;
+  padding-left: 54px;
 }
 
 .appointment-item:nth-child(3) label:nth-of-type(1) {
@@ -490,6 +500,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-item input:focus {
   background-color: #ffffff;
+  outline: 2px solid #e5e5e5;
 }
 
 .index-button {
@@ -514,28 +525,28 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   position: relative;
-  top: -58px;
   width: 1200px;
   margin: 0 auto;
+  margin-top: -31px;
   min-height: 120px;
   z-index: 15;
   background-color: #ffffff;
-  opacity: 90%;
+  opacity: 90%; 
 }
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .footer-contact {
   display: block;
-  margin: 0;
   margin-top: 36px;
   margin-left: 132px;
   font-size: 21px;
-  text-align: 21px;
+  line-height: 26px;
   font-weight: 600;
 }
 
@@ -549,7 +560,7 @@ input[type="radio"].visually-hidden {
   
   padding-top: 36px;
   padding-left: 169px;
-  padding-bottom: 36px;
+  padding-bottom: 26px;
   list-style: none;
 }
 
