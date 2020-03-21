@@ -193,7 +193,8 @@ input[type="radio"].visually-hidden {
 .product-description {
   margin: 0;
   padding: 0;
-  margin-left: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
   text-align: center;
 }
 
@@ -224,46 +225,20 @@ input[type="radio"].visually-hidden {
 }
 
 .product-info-two {
-  display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  align-items: center;
-  color: #ffffff;
-
-  background-color: #81b3d2;
 }
 
 .product-description-two {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin-left: 48px;
-}
-
-.product-description-two h2 {
-  font-size: 21px;
-  font-weight: 600;
-  line-height: 21px;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 15px;
-}
-
-.product-description-two p {
-  font-size: 14px;
-  line-height: 21px;
-  margin: 0;
-  padding: 0;
-}
-
-.product-description-two p:first-of-type {
-  padding-bottom: 15px;
+  padding-left: 48px;
+  padding-right: 49px;
 }
 
 .product-info-image-two {
-  width: 800px;
-  height: 256px;
+  margin: 0;
+  margin-right: auto;
 }
+
 
 .product-info-list {
   display: flex;
@@ -457,18 +432,20 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-calendar {
+  width: 21px;
+  height: 22px;
   position: absolute;
   top: 9px;
   left: 429px;
   cursor: pointer;
 }
 
-.appointment-calendar path:hover,
-.appointment-calendar path:focus {
+.appointment-calendar:hover path,
+.appointment-calendar:focus path {
   fill: #000000;
 }
 
-.appointment-calendar path:active {
+.appointment-calendar:active path {
   fill: #81b3d2;
 }
 
@@ -598,12 +575,12 @@ input[type="radio"].visually-hidden {
   margin-right: 8px;
 }
 
-.footer-copyright path:focus,
-.footer-copyright path:hover {
+.footer-copyright:focus path,
+.footer-copyright:hover path {
   fill: #81b3d2;
 }
 
-.footer-copyright path:active {
+.footer-copyright:active path {
   fill: rgba(0, 0, 0, 0.3);
 }
 
