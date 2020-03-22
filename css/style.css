@@ -864,8 +864,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 72px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -879,17 +878,15 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-right: auto;
-  margin-left: 72px; 
 
   background-color: rgba(0, 0, 0, 0.2);
-
 }
 
-.hotel-name {
+.hotels {
   padding-left: 30px;
 }
 
-.hotel-name h3 {
+.hotels h3 {
   position: relative;
   top: -2px;
   font-size: 21px;
@@ -898,20 +895,20 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.hotel-name h3 a:hover,
+.hotels h3 a:hover,
 .hotel-name  h3 a:focus {
   color: #81b3d2;
 }
 
-.hotel-name h3 a:active{
+.hotels h3 a:active{
 color: rgba(0, 0, 0, 0.3);
 }
 
-.hotels a {
+.hotel-name a {
  color: #000000; 
 }
 
-.hotel-name p {
+.hotels p {
   display: flex;
   margin: 0;
   padding: 0;
@@ -927,7 +924,6 @@ color: rgba(0, 0, 0, 0.3);
 .hotel-rating-stars {
   margin: 0;
   padding: 0;
-  margin-right: 72px;
 }
 
 .hotel-rating-stars p {
@@ -1039,7 +1035,7 @@ color: rgba(0, 0, 0, 0.3);
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: baseline;
-  padding-bottom: 0px;
+  padding-bottom: 33px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-top: 26px;
 }
@@ -1048,8 +1044,7 @@ color: rgba(0, 0, 0, 0.3);
   margin: 0;
   padding: 0;
   margin-top: 0px;
-  padding-left: 72px;
-  padding-bottom: 33px;
+  margin-left: 72px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -1059,8 +1054,7 @@ color: rgba(0, 0, 0, 0.3);
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 40px;
-  padding-bottom: 33px;
+  margin-left: 40px;
 }
 
 .shorting-container p {
@@ -1068,7 +1062,6 @@ color: rgba(0, 0, 0, 0.3);
   margin: 0;
   padding: 0;
   margin-left: 49px;
-  padding-bottom: 33px;
 }
 
 .shorting {
@@ -1079,34 +1072,34 @@ color: rgba(0, 0, 0, 0.3);
 .shorting li {
   margin: 0;
   padding: 0;
-  padding-right: 33px;
+  margin-right: 33px;
 }
 
-.shorting li:not(:first-child) a {
+.shorting li:not(:first-child) span {
   font-size: 12px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
 
-.shorting li:first-child a {
+.shorting li:first-child span {
   font-size: 12px;
   font-weight: 400;
   color: #81b3d2;
   border: none;
 }
 
-.shorting li:not(:first-child) a:hover,
-.shorting li:not(:first-child) a:focus {
+.shorting li:not(:first-child) span:hover,
+.shorting li:not(:first-child) span:focus {
   color: #81b3d2;
 }
 
-.shorting li:not(:first-child) a:active {
+.shorting li:not(:first-child) span:active {
   color: #000000;
   border: none;
 }
 
-.shorting li:first-child a:active {
+.shorting li:first-child span:active {
   color: #000000;
   border: none;
 }
@@ -1114,7 +1107,6 @@ color: rgba(0, 0, 0, 0.3);
 .icon-up-down {
   display: flex;
   margin: 0;
-  padding-bottom: 33px;
   margin-left: auto;
   margin-right: 73px;
   cursor: pointer;
