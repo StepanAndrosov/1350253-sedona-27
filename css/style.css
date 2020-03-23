@@ -406,10 +406,14 @@ input[type="radio"].visually-hidden {
   padding: 55px;
   box-shadow: 0 3px 15px -8px #000000;
   background-color: #ffffff;
+  transition: 600ms all; 
+  opacity: 1;
+  z-index: 5;
 }
 
 .modal-window {
-  display: none;
+  opacity: 0;
+  z-index: -1;
 }
 
 .appointment-item {
