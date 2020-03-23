@@ -1,5 +1,5 @@
 body {
-  min-width: 1200px;
+  min-width: 1280px;
   margin: 0;
   padding: 0;
 
@@ -9,7 +9,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
  
 a {
@@ -68,6 +68,7 @@ input[type="radio"].visually-hidden {
   font-weight: 600;
   line-height: 26px;
   color: #000000;
+  box-shadow: 0 -4px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .site-navigation {
@@ -136,12 +137,12 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   padding: 0 0;
+  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .page-image {
   width: 100%;
   height: 510px;
-  margin-bottom: 59px;
   background-color: #81b3d2;
   
   background: 
@@ -153,6 +154,7 @@ input[type="radio"].visually-hidden {
 .info {
   margin: 0;
   padding: 0; 
+  background-color: #ffffff;
 }
 
 .info h2 {
@@ -163,6 +165,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin: 0;
   margin-bottom: 29px;
+  padding-top: 59px;
 }
 
 .info p {
@@ -171,7 +174,7 @@ input[type="radio"].visually-hidden {
   color: #333333;
   text-align: center;
   margin: 0;
-  margin-bottom: 54px;
+  padding-bottom: 54px;
 }
 
 .product-info {
@@ -247,11 +250,12 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-left: 73px;
-  margin-right: 63px;
-  margin-top: 56px; 
-  margin-bottom: 73px;
+  padding-left: 73px;
+  padding-right: 63px;
+  padding-top: 56px; 
+  padding-bottom: 73px;
   list-style: none;
+  background-color: #ffffff;
 }
 
 .info-logo li {
@@ -288,7 +292,6 @@ input[type="radio"].visually-hidden {
 .product-info-info {
   margin: 0;
   padding: 0;
-  margin-bottom: 54px;
   background-color: #eeeeee;
 }
 
@@ -324,12 +327,15 @@ input[type="radio"].visually-hidden {
 
 .form-section {
   position: relative;
+  background-color: #ffffff;
 }
 
 .form-title {
   text-align: center; 
   margin: 0;
   padding: 0;
+  padding-top: 54px;
+  background-color: #ffffff;
 }
 
 .form-title h3 {
@@ -356,7 +362,6 @@ input[type="radio"].visually-hidden {
   margin-left: -284px;
   width: 568px;
   min-height: 491px;
-  
   z-index: 10;
 }
 
@@ -369,7 +374,7 @@ input[type="radio"].visually-hidden {
   text-align: center; 
 }
 
-.form-container a {
+.search-button {
   color: #ffffff;
   padding-top: 31px;
   padding-bottom: 33px; 
@@ -378,12 +383,12 @@ input[type="radio"].visually-hidden {
   background-color: #766357; 
 }
 
-.form-container a:hover,
-.form-container a:focus {
+.search-button:hover,
+.search-button:focus {
   background-color: #604e43; 
 }
 
-.form-container a:active {
+.search-button:active {
   background-color: #503e33; 
 }
 
@@ -399,8 +404,12 @@ input[type="radio"].visually-hidden {
   flex-grow: 1;
 
   padding: 55px;
-  
+  box-shadow: 0 3px 15px -8px #000000;
   background-color: #ffffff;
+}
+
+.modal-window {
+  display: none;
 }
 
 .appointment-item {
@@ -460,12 +469,6 @@ input[type="radio"].visually-hidden {
   padding-left: 54px;
 }
 
-.appointment-item:nth-child(3) input[type="number"]::-webkit-outer-spin-button,
-.appointment-item:nth-child(3) input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .inupt-plus,
 .inupt-minus {
   position: absolute;
@@ -490,21 +493,46 @@ input[type="radio"].visually-hidden {
   color: #81b3d2;
 }
 
-.appointment-item:nth-child(3) .inupt-plus {
-  left: 425px;
-}
-
-.appointment-item:nth-child(3) .inupt-minus {
-  left: 355px;
-}
-
-.appointment-item:nth-child(3) .inupt-plus:first-of-type {
+.inupt-plus {
   left: 195px;
 }
 
-.appointment-item:nth-child(3) .inupt-minus:nth-of-type(2) {
+.inupt-minus {
   left: 125px;
 }
+
+.inupt-plus-two {
+  left: 425px;
+}
+
+.inupt-minus-two {
+  left: 355px;
+}
+
+.input-number:hover .inupt-plus,
+.input-number:hover .inupt-minus {
+  background-color: #ebebeb;
+}
+
+.input-number:active .inupt-plus,
+.input-number:active .inupt-minus {
+  background-color: #ffffff;
+}
+
+.input-number:focus .inupt-plus,
+.input-number:focus .inupt-minus {
+  background-color: #ffffff;
+}
+
+.inupt-plus:hover .input-number {
+  background-color: #ffffff;
+}
+
+.inupt-plus:active .input-number input, 
+.inupt-minus:active .input-number input {
+  background-color: #ffffff;
+}
+
 
 .appointment-item:nth-child(3) label:nth-of-type(1) {
   padding-right: 41px;
@@ -551,6 +579,7 @@ input[type="radio"].visually-hidden {
   z-index: 15;
   background-color: #ffffff;
   opacity: 90%; 
+  box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .footer--index {
@@ -856,6 +885,7 @@ input[type="radio"].visually-hidden {
 .hotels-list {
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
 }
 
 .hotels-list-container {
@@ -1036,7 +1066,8 @@ color: rgba(0, 0, 0, 0.3);
   align-items: baseline;
   padding-bottom: 33px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin-top: 26px;
+  padding-top: 26px;
+  background-color: #ffffff;
 }
 
 .shorting-container h3 {

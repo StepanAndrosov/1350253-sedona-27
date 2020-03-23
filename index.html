@@ -97,9 +97,7 @@
                     <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 </div>
                 <div class="form-container">
-                    <a href="hotels.html">
-                        <h2>Поиск гостиницы в Седоне</h2>
-                    </a>
+                    <a class="search-button" href="hotels.html"><h2>Поиск гостиницы в Седоне</h2></a>
                     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
                         <div class="appointment-item">
                             <label for="appointment-date-check-in">
@@ -125,18 +123,32 @@
                                 </svg>
                             </div>
                         </div>
+
                         <div class="appointment-item">
+
                             <label for="appointment-number-of-adults">
                             Взрослые:
                             </label>
-                            <button class="inupt-plus">+</button><button class="inupt-minus">–</button>
-                            <input id="appointment-number-of-adults" type="number" name="number" value="2">
+                            <div class="input-number">
+
+                            <button type="button" class="inupt-plus">+</button>
+                            <button type="button" class="inupt-minus">–</button>
+
+                            <input id="appointment-number-of-adults" type="text" name="number" value="2">
+                         </div>
+
                             <label for="appointment-number-of-children">
                             Дети:
                             </label>
-                            <button class="inupt-plus">+</button><button class="inupt-minus">–</button>
-                            <input id="appointment-number-of-children" type="number" name="number" value="0">
+                            <div class="input-number">
+                            <button type="button" class="inupt-plus inupt-plus-two">+</button>
+                            <button type="button" class="inupt-minus inupt-minus-two">–</button>
+
+                            <input id="appointment-number-of-children" type="text" name="number" value="0">
+                         </div>
+
                         </div>
+
                         <button type="submit" class="index-button button">Найти</button>
                     </form>
                 </div>
@@ -181,5 +193,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>
