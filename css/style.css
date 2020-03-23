@@ -411,7 +411,7 @@ input[type="radio"].visually-hidden {
   z-index: 5;
 }
 
-.modal-window {
+.hidden {
   opacity: 0;
   z-index: -1;
 }
@@ -469,13 +469,17 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-item:nth-child(3) input {
-  max-width: 114px;
-  padding-left: 54px;
+  max-width: 38px;
+}
+
+.input-number {
+  display: flex;
+  justify-content: space-between;
 }
 
 .inupt-plus,
 .inupt-minus {
-  position: absolute;
+  width: 38px;
   font-size: 24px;
   font-weight: 600;
   color: #a9a9a9;
@@ -483,6 +487,7 @@ input[type="radio"].visually-hidden {
   border: none;
   cursor: pointer;
   top: 4px;
+  background-color: #f2f2f2;
 }
 
 .inupt-plus:hover,
@@ -497,54 +502,8 @@ input[type="radio"].visually-hidden {
   color: #81b3d2;
 }
 
-.inupt-plus {
-  left: 195px;
-}
-
-.inupt-minus {
-  left: 125px;
-}
-
-.inupt-plus-two {
-  left: 425px;
-}
-
-.inupt-minus-two {
-  left: 355px;
-}
-
-.input-number:hover .inupt-plus,
-.input-number:hover .inupt-minus {
-  background-color: #ebebeb;
-}
-
-.input-number:active .inupt-plus,
-.input-number:active .inupt-minus {
-  background-color: #ffffff;
-}
-
-.input-number:focus .inupt-plus,
-.input-number:focus .inupt-minus {
-  background-color: #ffffff;
-}
-
-.inupt-plus:hover .input-number {
-  background-color: #ffffff;
-}
-
-.inupt-plus:active .input-number input, 
-.inupt-minus:active .input-number input {
-  background-color: #ffffff;
-}
 
 
-.appointment-item:nth-child(3) label:nth-of-type(1) {
-  padding-right: 41px;
-}
-
-.appointment-item:nth-child(3) label:nth-of-type(2) {
-  padding-left: 53px;
-}
 
 .appointment-item input:hover {
   background-color: #ebebeb;
@@ -553,6 +512,12 @@ input[type="radio"].visually-hidden {
 .appointment-item input:focus {
   background-color: #ffffff;
   outline: 2px solid #e5e5e5;
+}
+
+.appointment-item:nth-child(3) input:hover,
+.appointment-item:nth-child(3) input:focus {
+  background-color: #f2f2f2;
+  outline: none;
 }
 
 .index-button {
