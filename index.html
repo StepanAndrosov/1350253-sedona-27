@@ -10,9 +10,7 @@
    <body>
       <header class="main-header">
          <nav class="site-navigation">
-            <a class="main-header-logo"  href="index.html">
-            <img src="img/logo.png" width="140" height="72" alt="Логотип «City of Sedona»"></a>
-            <div class="site-navigation-left">
+          <div class="site-navigation-left">
             <a href="info.html">Информация</a>
             <a href="news.html">Фото и видео</a> 
             </div>
@@ -20,8 +18,9 @@
             <a href="statemap.html">Карта штата</a>
             <a href="hotels.html">Гостиницы</a>
             </div>
-
-         </nav>
+             </nav>
+             <a class="main-header-logo"  href="index.html">
+            <img src="img/logo.png" width="140" height="72" alt="Логотип «City of Sedona»"></a>
       </header>
       <main class="container">
          <h1 class="visually-hidden">Гостиницы в Седоне</h1>
@@ -140,8 +139,8 @@
                         </svg>
                      </div>
                   </div>
-                  <div class="appointment-item">
-                     <label for="appointment-number-of-adults">
+                  <div class="appointment-item appointment-item-number">
+                     <label class="label-adults" for="appointment-number-of-adults">
                      Взрослые:
                      </label>
                      <div class="input-number">
@@ -149,7 +148,7 @@
                         <input id="appointment-number-of-adults" type="text" name="number" value="2">
                         <button type="button" class="inupt-plus">+</button>
                      </div>
-                     <label for="appointment-number-of-children">
+                     <label class="label-children" for="appointment-number-of-children">
                      Дети:
                      </label>
                      <div class="input-number">

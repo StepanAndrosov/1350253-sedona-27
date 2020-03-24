@@ -1,3 +1,4 @@
+
 const link = document.querySelector(".search-button");
 
 const popup = document.querySelector(".appointment-form");

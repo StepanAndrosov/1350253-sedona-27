@@ -69,7 +69,7 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   color: #000000;
   box-shadow: 0 -4px 5px 5px rgba(0, 0, 0, 0.1);
-
+  position: relative;
   background-color: #FFE4B5;
 }
 
@@ -81,7 +81,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  position: relative;
 }
 
 .site-navigation a {
@@ -188,6 +187,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-left: 60px;
   padding-right: 60px;
+  padding-bottom: 19px;
   text-align: center;
 }
 
@@ -197,7 +197,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .product-description p {
@@ -250,7 +250,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-left: 73px;
   padding-right: 63px;
-  padding-top: 56px; 
+  padding-top: 60px; 
   padding-bottom: 73px;
   list-style: none;
   background-color: #ffffff;
@@ -271,7 +271,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-top: 32px;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
 }
 
 .info-logo p {
@@ -360,9 +360,9 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   position: absolute;
   left: 50%;
-  margin-left: -284px;
+  transform: translateX(-50%);
   width: 568px;
-  min-height: 491px;
+  min-height: 485px;
   z-index: 10;
 }
 
@@ -401,11 +401,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between; 
   flex-grow: 1;
-
   padding: 55px;
   box-shadow: 0 3px 15px -8px #000000;
+
   background-color: #ffffff;
   transition: 600ms all; 
   opacity: 1;
@@ -425,13 +424,32 @@ input[type="radio"].visually-hidden {
   font-weight: 600;
   margin: 0;
   padding: 0;
+  margin-bottom: 15px;
   box-sizing: border-box;
 }
 
 .appointment-item label {
+  width: 95px;
   display: block;
   cursor: pointer;
-  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.appointment-item-number {
+  margin-bottom: 40px;
+}
+
+.appointment-item-number label {
+  width: 75px;
+}
+
+.appointment-item-number .label-adults {
+  margin-right: 40px;
+}
+
+.appointment-item-number .label-children {
+  padding-left: 53px; 
+  margin-right: 27px;
 }
 
 .appointment-item {
@@ -457,8 +475,7 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-item input {
-  flex-grow: 1;
-  max-width: 346px; 
+  width: 346px; 
   height: 38px;
   outline: 0;
   border: none;
@@ -469,7 +486,7 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
 }
 
-.appointment-item:nth-child(3) input {
+.input-number input {
   max-width: 38px;
 }
 
@@ -512,8 +529,8 @@ input[type="radio"].visually-hidden {
   outline: 2px solid #e5e5e5;
 }
 
-.appointment-item:nth-child(3) input:hover,
-.appointment-item:nth-child(3) input:focus {
+.input-number input:hover,
+.input-number input:focus {
   background-color: #f2f2f2;
   outline: none;
 }
