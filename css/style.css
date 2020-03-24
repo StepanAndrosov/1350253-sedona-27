@@ -69,48 +69,41 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   color: #000000;
   box-shadow: 0 -4px 5px 5px rgba(0, 0, 0, 0.1);
+
+  background-color: #FFE4B5;
 }
 
 .site-navigation {
-  position: relative;
-  min-height: 56px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  
+  align-items: center;
+  min-height: 56px;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  position: relative;
 }
 
 .site-navigation a {
   margin: 0;
+  padding: 0;
   color: #000000;
+  text-align: center;
 }
 
-.site-navigation a:not(.main-header-logo) {
-  margin-top: 12px;
-  margin-right: 60px;
-  margin-left: 60px;
-  margin-bottom: 10px;
-}
-
-.site-navigation a:first-child {
+.site-navigation-left {
+  width: 338px;
+  display: flex;
+  justify-content: space-between;
   margin-left: 72px;
 }
 
-.site-navigation a:last-child {
-  margin-right: 72px;
-}
-
-.site-navigation a:nth-child(2) {
-  position: relative;
-  right: 85px;
-}
-
-.site-navigation a:nth-child(4) {
-  position: relative;
-  left: 80px;
+.site-navigation-right {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 72px
 }
 
 .nav-current {
@@ -138,7 +131,7 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   padding: 0 0;
-  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .page-image {
