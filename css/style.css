@@ -183,12 +183,13 @@ input[type="radio"].visually-hidden {
 }
 
 .product-description {
+  max-width: 400px;
   margin: 0;
   padding: 0;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 19px;
+  padding-left: 50px;
+  padding-right: 55px;
   text-align: center;
+  padding-bottom: 15px;
 }
 
 .product-description h2 {
@@ -197,7 +198,9 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 23px;
 }
 
 .product-description p {
@@ -208,7 +211,7 @@ input[type="radio"].visually-hidden {
 }
 
 .product-description p:first-of-type {
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 }
 
 .product-info-image {
@@ -270,7 +273,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   margin: 0;
   padding: 0;
-  padding-top: 32px;
+  padding-top: 30px;
   padding-bottom: 23px;
 }
 
@@ -430,7 +433,6 @@ input[type="radio"].visually-hidden {
 
 .appointment-item label {
   width: 95px;
-  display: block;
   cursor: pointer;
   margin-right: 20px;
 }
@@ -444,12 +446,11 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-item-number .label-adults {
-  margin-right: 40px;
+  margin-right: 41px;
 }
 
 .appointment-item-number .label-children {
   padding-left: 53px; 
-  margin-right: 27px;
 }
 
 .appointment-item {
@@ -672,7 +673,7 @@ input[type="radio"].visually-hidden {
 .fieldset-container {
   margin-left: 72px;
   margin-right: 43px;
-  margin-top: 31px;
+  margin-top: 20px;
 }
 
 .filter fieldset {
@@ -683,7 +684,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter legend {
-  margin-bottom: 28px;
+  padding-top: 10px;
+  padding-bottom: 28px;
 
   font-weight: 600;
   font-size: 16px;
@@ -726,7 +728,7 @@ input[type="radio"].visually-hidden {
   }
 
 .filter-option label {
-  padding-bottom: 29px;
+  padding-bottom: 20px;
   position: relative;
 
   display: block;
@@ -1094,33 +1096,34 @@ color: rgba(0, 0, 0, 0.3);
   margin: 0;
   padding: 0;
   margin-right: 33px;
+  cursor: pointer;
 }
 
-.shorting li:not(:first-child) span {
+.shorting li:not(:first-child) a {
   font-size: 12px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
 
-.shorting li:first-child span {
+.shorting li:first-child a {
   font-size: 12px;
   font-weight: 400;
   color: #81b3d2;
   border: none;
 }
 
-.shorting li:not(:first-child) span:hover,
-.shorting li:not(:first-child) span:focus {
+.shorting li:not(:first-child) a:hover,
+.shorting li:not(:first-child) a:focus {
   color: #81b3d2;
 }
 
-.shorting li:not(:first-child) span:active {
+.shorting li:not(:first-child) a:active {
   color: #000000;
   border: none;
 }
 
-.shorting li:first-child span:active {
+.shorting li:first-child a:active {
   color: #000000;
   border: none;
 }
